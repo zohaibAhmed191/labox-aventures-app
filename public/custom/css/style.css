@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+body {
+  font-family: "Bona Nova", serif;
+  font-weight: 600;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: "Open Sans", serif;
+}
+
+.menu_dropdown {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: -20px;
+  outline: none;
+  border: none;
+}
+.menu_dropdown:focus,
+.menu_dropdown:hover {
+  color: #B58C05;
+}
+
+.menu_items p {
+  font-family: "Bona Nova", serif !important;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.blog_name {
+  font-family: "Bona Nova", serif !important;
+}
+
+.blog_des {
+  font-family: "Open Sans", serif;
+  margin-bottom: 10px;
+}
+
+.menu_items p:hover {
+  color: #B58C05 !important;
+}
+
+@font-face {
+  font-family: "CustomFont"; /* Name for your font */
+  src: url("../fonts/DragonHunter-9Ynxj.otf") format("truetype"); /* Path to your .ttf file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border: 1px solid #B58C05;
+}
+
+.button_shadow {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(238, 197, 107, 0.5);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(238, 197, 107, 0.5);
+  box-shadow: 0px 0px 30px 0px rgba(238, 197, 107, 0.5);
+}
+
+.dropdown-item {
+  font-family: "Open Sans", serif;
+  color: #B58C05;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  color: black;
+  background-color: #B58C05;
+}
+
+.new_header_img {
+  background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/18-1920x1080-8b8c964876548e7c1c22b715568c30c9.jpg?resize=1&w=1920") !important;
+}
+.new_header_img2 {
+  background-image: url("https://images.alphacoders.com/134/1345559.png") !important;
+}
+.new_header_img3 {
+  background-image: url("../../images/newbbb.jpg") !important;
+}
+.new_reviews {
+  background-image: url("../../images/newreview.jpg") !important;
+}
+.globebg {
+  background-image: url("../../images/globe.jpg") !important;
+}
+
+.newOfoter {
+  background-image: url("https://is1-ssl.mzstatic.com/image/thumb/hSJRoV2Fpf6-nLU93ELPFw/2048x1365bb.jpg") !important;
+}
+.newGamesImage {
+  background-image: url("https://cdn.hearthstonetopdecks.com/wp-content/uploads/2017/11/gold-cave-wallpaper.jpg") !important;
+}
+.newGamesImage1 {
+  background-image: url("https://img6.arthub.ai/64ae7ba2-fce3.webp") !important;
+}
+.newGamesImage2 {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56abb3d6-a45e-4241-88b6-a9a8ccfafbfe/dhdziyu-4119ecc0-25be-4f7b-8463-6e2416613206.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU2YWJiM2Q2LWE0NWUtNDI0MS04OGI2LWE5YThjY2ZhZmJmZVwvZGhkeml5dS00MTE5ZWNjMC0yNWJlLTRmN2ItODQ2My02ZTI0MTY2MTMyMDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.i0Qu7aU8itSZm1SvOlVsJg85Wz0iyHMO0DPF9TN8odg") !important;
+}
+
+.contactusBg {
+  background-image: url("https://escape-maniac.com/wp-content/uploads/2018/04/final_escape_wuppertal_sherlock.jpg") !important;
+}
+.blogs_bg {
+  background-image: url("../../images/wooden_bg.jpg") !important;
+  background-size: 100% 100% !important;
+}
+
+.main_header {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  background-image: url("https://images4.alphacoders.com/134/1345561.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  z-index: 1; /* Ensure the header content stays on top */
+  overflow: hidden; /* Prevent overflow issues */
+  font-family: "CustomFont", sans-serif; /* Fallback to sans-serif */
+}
+
+.main_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the alpha value (0.5) for desired transparency */
+  z-index: -1; /* Keep the overlay behind the content */
+}
+
+.text_cream {
+  color: #B58C05;
+}
+
+.main_logo {
+  width: 20%;
+  scale: 1.1;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.scale1 {
+  scale: 1 !important;
+}
+
+.main_heading {
+  font-size: 100px !important;
+  margin-top: 150px;
+}
+
+.video_section {
+  width: 100%;
+  min-height: 800px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1974cbc4-e693-4528-b7f8-6d925fa77a29/d5b6674-f1d80f13-2009-4217-9f6f-d495a182c42e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5NzRjYmM0LWU2OTMtNDUyOC1iN2Y4LTZkOTI1ZmE3N2EyOVwvZDViNjY3NC1mMWQ4MGYxMy0yMDA5LTQyMTctOWY2Zi1kNDk1YTE4MmM0MmUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Gs8QwCoRcQio1NwOZx_cHgTUU_grYBwUw8RWDq-l7HE");
+  background-size: 100% 100%;
+  padding: 60px 0;
+}
+
+.video_section_2 {
+  width: 100%;
+  min-height: 800px;
+  background-image: url("../../images/newVideobg.webp");
+  background-size: 100% 100%;
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+.video_section_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 120px 47px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 120px 47px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 120px 47px rgba(0, 0, 0, 1);
+  z-index: -1;
+}
+
+.video_section .video_wrapper {
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  background-image: url("../../images/greenBorder.png");
+  background-size: 100% 100%;
+  position: relative;
+  aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
+  margin: 0 auto; /* Center the video on the page */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.video_section_2 .video_wrapper {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url("../../images/new_frame.png");
+  background-size: 100% 100%;
+  position: relative;
+  aspect-ratio: 16 / 9; /* Maintain 16:9 ratio */
+  margin: 0 auto; /* Center the video on the page */
+  overflow: hidden; /* Prevent overflow */
+  filter: drop-shadow(0px 10px 15px rgb(244, 149, 59, 0.5));
+}
+
+.video_section_2 .video_wrapper iframe {
+  position: absolute;
+  top: 19.4%;
+  left: 11.2%;
+  width: 76.8%;
+  height: 59%;
+  border-radius: 0px;
+}
+
+.video_wrapper iframe {
+  position: absolute;
+  top: 15.6%;
+  left: 9%;
+  width: 81.5%;
+  height: 61.5%;
+  border-radius: 0px;
+  border: none; /* Remove iframe border */
+  /* border: 1px solid red; */
+}
+
+.avis_content {
+  width: 70%;
+  min-height: 100px;
+  margin: auto;
+  position: relative;
+  /* padding: 30px 0; */
+}
+
+.review_Section {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../../images/review_bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+.product_section {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../../images/products_section.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.new_pro_bg {
+  background-image: url("../../images/new__pro__bg.jpg");
+}
+.new_pro_bg_1 {
+  background-image: url("../../images/newbgg.jpg");
+}
+.new_pro_bg_2 {
+  background-image: url("../../images/newbbb.jpg");
+}
+.new_pro_bg_3 {
+  background-image: url("../../images/newbb22.jpg");
+}
+.new_pro_bg_4 {
+  background-image: url("../../images/newssss.jpg");
+}
+
+.product_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 165, 0, 0.2);
+  z-index: -1;
+  box-shadow: inset 0 100px 100px -100px goldenrod,
+    inset 0 -100px 100px -100px gold;
+}
+.single_game_section {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("https://us.v-cdn.net/5021068/uploads/editor/lo/pnjwjespze7u.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.single_game_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 165, 0, 0.3); /* Black overlay with 60% opacity */
+  z-index: -1; /* Place the overlay behind the content */
+  box-shadow: inset 0 100px 100px -100px orange,
+    inset 0 -100px 100px -100px orange;
+}
+
+.faqs_section {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../../images/newfaqq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.faqs_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.3); /* Black overlay with 60% opacity */
+  z-index: -1; /* Place the overlay behind the content */
+  -webkit-box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+}
+
+.faq_page_content {
+  background-image: url("../../images/faq_content_bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blogs_section {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url("../../images/blgss.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.blogs_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 8, 0.3); /* Black overlay with 60% opacity */
+  z-index: -1; /* Place the overlay behind the content */
+  -webkit-box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+  -moz-box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 200px 80px rgb(0, 0, 0);
+}
+
+.faq_section_wrapper {
+  width: 100%;
+  min-height: 580px;
+  background-image: url("../../images/faqq.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.faq_page_wrapper {
+  width: 100%;
+  min-height: 580px;
+  background-image: url("../../images/faq_page_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 150px 100px;
+}
+
+.footer_Section {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/67/25/38/360_F_367253833_0tPiVPuyTMMmN8azCLjOv8yFO44tqXTh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 0;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.footer_Section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+  z-index: -1; /* Place the overlay behind the content */
+}
+
+.socailimagesa img {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-color: rgb(0, 0, 0, 0.2);
+
+  padding: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.socailimagesa img:hover {
+  scale: 1.2;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.new_single_prod {
+  background-image: url("https://rare-gallery.com/mocahbig/419841-noir-detectives-office.jpg");
+}
+
+
+.game_wrapper {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../images/product_slide.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.new_slide {
+  background-image: url("../../images/locker.png");
+}
+
+.new_lock {
+  transform: translateY(-60px) !important;
+}
+
+.slide_navs {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.game_img {
+  width: 210px !important;
+  height: 220px;
+  display: block;
+  margin: auto;
+  transform: translateY(-35px);
+  border-radius: 5px;
+}
+
+.games-carousel .item {
+  height: 550px !important;
+  /* padding-top: 100px; */
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+.blog-carousel .item {
+  height: 450px !important;
+  padding-top: 100px;
+}
+
+.escape_slide_wrapper {
+  width: 500px !important;
+  height: 500px;
+  background-image: url("../../images/imgBorder2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.escape_slide_wrapper1 {
+  width: 500px !important;
+  height: 500px;
+  background-image: url("../../images/imgBorder1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commonButton {
+  width: 250px;
+  height: 70px;
+  background: none;
+  border: none;
+  background-image: url("../../images/buttonbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 20px;
+  font-weight: 600;
+}
+.commonButton2 {
+  width: 250px;
+  height: 70px;
+  background: none;
+  border: none;
+  background-image: url("../../images/_Pngtree_glossy_button_2d_and_3d_5501240-removebg-preview\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.escapeImg {
+  width: 59% !important;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(243, 197, 133, 0.2);
+}
+.escapeImg1 {
+  width: 63.5% !important;
+  height: 72%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(243, 197, 133, 0.2);
+}
+
+.game_prod_box {
+  width: 60%;
+}
+
+.review_star {
+  width: 50px !important;
+  height: 50px !important;
+}
